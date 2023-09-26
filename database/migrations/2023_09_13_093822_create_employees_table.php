@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('employee_name');
             $table->string('address');
             $table->date('birthdate');
-            $table->integer('phone');
-            $table->integer('national_number');
+            $table->bigInteger('phone');
+            $table->bigInteger('national_number');
             $table->string('gender');
             $table->string('department');
             $table->string('position');

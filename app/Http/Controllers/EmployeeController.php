@@ -56,15 +56,9 @@ class EmployeeController extends Controller
                 'identity' => $path_identity,
                 'criminal_record' => $path_criminal,
 
+                $data = Department::select('id')->where([['department_name' , $request['department']],])->get()->pluck('id')[0],
+                'department_id' => $data,
 
-
-                $data = Department::select('id')->where([
-                    ['department_name' , $request['department']],
-                ])->get(),
-                $plucked = $data->pluck('id'),
-                $pure = $plucked,
-
-                'department_id' => $pure[0],
             ]);
         } catch ( Exception ){
 

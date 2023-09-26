@@ -28,7 +28,7 @@ class Add_EmployeeRequest extends FormRequest
             'address'=> ['required', 'string'],
             'birthdate'=> ['required'],
             'phone'=> ['required'],
-            'national_number'=> ['required'],
+            'national_number'=> ['required' , 'digits:14'],
             'gender'=> ['required'],
             'department'=> ['required', 'string'],
             'position'=> ['required', 'string'],

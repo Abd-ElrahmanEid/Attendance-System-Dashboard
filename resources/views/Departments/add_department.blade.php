@@ -39,11 +39,7 @@
 
                         <div class="form-group col-md-6">
                             <label for="department_name">Department Name</label>
-                            <select class="form-control" id="department_name" name="department_name">
-                                <option value="" disabled selected hidden>-Select-</option>
-                                <option value="Finance">Finance</option>
-                                <option value="HR">HR</option>
-                            </select>
+                            <input type="text" class="form-control" id="department_name" name="department_name" placeholder="Please, Enter Department Name">
                             @error('department_name')
                             <p class="text-danger">{{$message}}</p>
                             @enderror
