@@ -53,6 +53,8 @@ Route::resource('print' , PrintController::class);
 
 
 
+
+
 });
 
 require __DIR__.'/auth.php';
